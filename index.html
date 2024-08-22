@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycles Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6699CC;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('security-background.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .scrollable-images {
+            width: 100%;
+            overflow-x: auto; /* Changed to auto to allow scrolling */
+            white-space: nowrap;
+            margin-top: 20px;
+            display: flex;
+            animation: scroll 30s linear infinite; /* Adjusted animation duration */
+        }
+
+        .scrollable-images img {
+            height: 200px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-item, .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .service-item i, .contact-item i {
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar li {
+                margin: 0 10px;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Cycles Technology Company</h1>
+        <p>Towards a better you</p>
+        <div class="scrollable-images">
+            <!-- Ensure images are correctly named and located -->
+            <img src="one.jpg" alt="Image 1">
+            <img src="two.jpg" alt="Image 2">
+            <img src="three.jpg" alt="Image 3">
+            <img src="net1.jpg" alt="Network 1">
+            <img src="net2.png" alt="Network 2">
+            <img src="net3.jpg" alt="Network 3">
+            <img src="one.jpg" alt="Image 1">
+            <img src="two.jpg" alt="Image 2">
+            <img src="three.jpg" alt="Image 3">
+            <img src="net1.jpg" alt="Network 1">
+            <img src="net2.png" alt="Network 2">
+            <img src="net3.jpg" alt="Network 3">
+        </div>
+    </section>
+
+    <section class="content" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <i class="fas fa-globe"></i>
+            <h3>Websites Creation & Hosting</h3>
+            <p>From portfolio websites to commercial sites, schools, and organizations, we offer comprehensive web development and hosting services.</p>
+        </div>
+        
+        <div class="service-item">
+            <i class="fas fa-network-wired"></i>
+            <h3>Networking</h3>
+            <p>Deployment, installation, and configuration services for networks, ensuring seamless connectivity and security.</p>
+        </div>
+    </section>
+
+    <section class="content" id="about">
+        <h2>About Us</h2>
+        <p>We are a leading Tech Company specializing in assisting businesses and individuals navigate the fast-paced technology world. With a focus on innovation, reliability, and customer satisfaction, our team of experts provides tailored solutions to meet your unique needs.</p>
+        <p>Our mission is to empower our clients with cutting-edge technology solutions that drive growth, efficiency, and success in the digital age.</p>
+    </section>
+
+    <section class="content" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+0111208018">Phone: +0111 2080 18</a>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:xcycles.24@gmail.com">Email: xcycles.24@gmail.com</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cycles Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
